@@ -3,8 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-.card img{
-
+h3{
+    margin-top: 8px;
 }
 
 body{
@@ -64,4 +64,19 @@ body{
     position: relative;
     margin-top: -140px;
     padding: 10px 15px;
+    align-items: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+.container .card:hover .content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
 }
